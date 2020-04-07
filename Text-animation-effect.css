@@ -1,0 +1,25 @@
+body{
+	font-family: verdana;
+	background-color: black;
+	text-transform: uppercase;
+}
+
+h1{
+	color: white;
+	margin: 0;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+span::before{
+	content: "";
+	animation: words 6s infinite;
+	color: #cc2626;
+}
+
+@keyframes words{
+	0%{ content: "desinger.";} 25%{ content: "programmer.";}
+	50%{ content: "father."; } 75%{ content: "developer."; }
+	100%{ content: "Hacker."; }
+}	
